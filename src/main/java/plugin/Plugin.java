@@ -1,7 +1,5 @@
 package plugin;
 
-import com.comphenix.protocol.ProtocolLibrary;
-import com.comphenix.protocol.ProtocolManager;
 import org.bukkit.command.PluginCommand;
 import org.bukkit.plugin.java.JavaPlugin;
 import plugin.commands.*;
@@ -11,19 +9,9 @@ import java.util.List;
 
 public class Plugin extends JavaPlugin {
     public static final List<ImageDrawTask> tasks = new ArrayList<>();
-//    public static final ProtocolManager protocolManager = ProtocolLibrary.getProtocolManager();
 
     @Override
     public void onEnable() {
-
-//        protocolManager.addPacketListener(new PacketAdapter(this, ListenerPriority.NORMAL, PacketType.Play.Server.NAMED_SOUND_EFFECT) {
-//            @Override
-//            public void onPacketSending(PacketEvent event) {
-//                if (event.getPacketType() == PacketType.Play.Server.NAMED_SOUND_EFFECT)
-//                    event.setCancelled(true);
-//            }
-//        });
-
         System.out.println("Plugin enabled");
 
         final PluginCommand initImage = getCommand("init_image");
