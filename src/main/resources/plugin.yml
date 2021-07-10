@@ -1,0 +1,20 @@
+main: plugin.Plugin
+name: ParticleImage
+version: 1.0
+description: Draw images using particles
+commands:
+  init_image:
+    usage: /init_image url x y z [width height]
+    description: Creates an instance for drawing a particle image
+  draw_image:
+    usage: /draw_image imgID [period]
+    description: starts drawing the image
+  delete_image:
+    usage: /delete_image imgID
+    description: removes the instance of the image drawing
+  delete_all:
+    usage: /delete_all
+    description: delets all image drawing instances
+  stop_all:
+    usage: /stop_all
+    description: stop all images from drawing
